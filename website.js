@@ -54,7 +54,7 @@ document.getElementById("rewind").addEventListener("click", function () {
   buttonClicked = true;
   setTimeout(function () {
     buttonClicked = false;
-  }, 4000);
+  }, 2000);
   var hiddenText1 = document.getElementById("aboutme");
 
   var hiddenmin = document.getElementById("minimise1");
@@ -69,36 +69,45 @@ document.getElementById("rewind").addEventListener("click", function () {
 
   setTimeout(function () {
     hiddenText2.classList.toggle("show");
-  }, 1000);
+  }, 500);
 
   var hiddenText5 = document.getElementById("aboutme2");
 
   setTimeout(function () {
     hiddenText5.classList.toggle("show");
-  }, 2000);
+  }, 1000);
 
   var hiddenText3 = document.getElementById("aboutme3");
   setTimeout(function () {
     hiddenText3.classList.toggle("show");
-  }, 3000);
+  }, 1500);
 
   var hiddenText4 = document.getElementById("aboutme4");
   setTimeout(function () {
     hiddenText4.classList.toggle("show");
-  }, 4000);
+  }, 2000);
   
 });
+
+var isRunning = false;
 
 document.querySelectorAll(".about").forEach((anchor) => {
   anchor.addEventListener("mouseenter", function (e) {
     e.preventDefault();
+
+    if (isRunning) {
+      return; // Exit early if the code is already running
+    }
+
+    isRunning = true;
+
     if (!buttonClicked) {
       var hiddenmin = document.getElementById("minimise1");
 
       if (!isElementVisible(hiddenmin)) {
         setTimeout(function () {
           hiddenmin.classList.toggle("show");
-        }, 4500);
+        }, 2000);
       }
 
       var hiddenText1 = document.getElementById("aboutme");
@@ -112,7 +121,7 @@ document.querySelectorAll(".about").forEach((anchor) => {
       if (!isElementVisible(hiddenText1)) {
         setTimeout(function () {
           hiddenText2.classList.toggle("show");
-        }, 1000);
+        }, 500);
       }
 
       var hiddenText5 = document.getElementById("aboutme2");
@@ -120,30 +129,24 @@ document.querySelectorAll(".about").forEach((anchor) => {
       if (!isElementVisible(hiddenText1)) {
         setTimeout(function () {
           hiddenText5.classList.toggle("show");
-        }, 2000);
+        }, 1000);
       }
 
       var hiddenText3 = document.getElementById("aboutme3");
       if (!isElementVisible(hiddenText1)) {
         setTimeout(function () {
           hiddenText3.classList.toggle("show");
-        }, 3000);
+        }, 1500);
       }
       var hiddenText4 = document.getElementById("aboutme4");
       if (!isElementVisible(hiddenText1)) {
         setTimeout(function () {
           hiddenText4.classList.toggle("show");
-        }, 4000);
+        }, 2000);
       }
     }
     
-    // biggerBox = document.querySelector(".biggerbox");
-    // if (biggerBox.style.borderBottom === "none") {
-    //   biggerBox.style.borderBottom = "2px solid #000";
-    // } else {
-    //   biggerBox.style.borderBottom = "none";
-    // }
-
-    // Toggle the display of the hidden text
+    isRunning = false;
+    
   });
 });

@@ -38,14 +38,14 @@
   background-color: rgba(255, 255, 255, 0.9);
   display: flex;
   align-items: center;
-  border-bottom: 2px solid #000;
-  border-left: 2px solid #000;
+  
+  
   border-right: 2px solid #000;
   border-top: 2px solid #000;
   border-radius: 5px;
   position: absolute;
   word-wrap: break-word;
-  left: 63.5%;
+  left: 60.5%;
   min-height: 225px;
   height: auto;
   width: 33%;
@@ -57,7 +57,7 @@
   transition: opacity 0.6s ease, visibility 0.6s ease;
   word-wrap: break-word;
   max-height: 100px;
-  overflow: hidden;
+  overflow: auto;
   float: right;
 }
 
@@ -109,18 +109,20 @@
   align-items: center;
   visibility: hidden;
   transition: opacity 0.6s ease, visibility 0.6s ease;
-  width: 15%;
-  height: auto;
+  width: 12%;
+  height: 350px;
   max-width: calc(0.15 * 1920);
-  max-height: 800px;
+  max-height: 350px;
+  overflow: auto;
   padding-top: 20px;
   left: 45%;
   transform: translateX(-60%);
   margin-top: 350px;
   visibility: visible;
   font-size: 1vw;
-  font-family: "Sora", sans-serif;
+  text-align:center;
 }
+
 
 #aboutme2 {
   display: flex;
@@ -128,17 +130,18 @@
   align-items: center;
   visibility: hidden;
   transition: opacity 0.6s ease, visibility 0.6s ease;
-  width: 15%;
-  height: auto;
+  width: 12%;
+  height: 350px;
   max-width: calc(0.15 * 1920);
-  max-height: 800px;
+  max-height: 350px;
+  overflow: auto;
   padding-top: 20px;
   left: 60%;
   transform: translateX(-60%);
   visibility: visible;
   margin-top: 350px;
   font-size: 1vw;
-  font-family: "Sora", sans-serif;
+  text-align:center;
 }
 
 #aboutme3 {
@@ -147,17 +150,18 @@
   align-items: center;
   visibility: hidden;
   transition: opacity 0.6s ease, visibility 0.6s ease;
-  width: 15%;
-  height: auto;
+  width: 12%;
+  height: 350px;
   max-width: calc(0.15 * 1920);
-  max-height: 800px;
+  max-height: 350px;
+  overflow: auto;
   padding-top: 20px;
   left: 75%;
   visibility: visible;
   transform: translateX(-60%);
   margin-top: 350px;
   font-size: 1vw;
-  font-family: "Sora", sans-serif;
+  text-align:center;
 }
 
 #aboutme4 {
@@ -166,17 +170,18 @@
   align-items: center;
   visibility: hidden;
   transition: opacity 0.6s ease, visibility 0.6s ease;
-  width: 15%;
-  height: auto;
+  width: 12%;
+  height: 350px;
   max-width: calc(0.15 * 1920);
-  max-height: 800px;
+  max-height: 350px;
+  overflow: auto;
   padding-top: 20px;
   left: 90%;
   transform: translateX(-60%);
   visibility: visible;
   margin-top: 350px;
   font-size: 1vw;
-  font-family: "Sora", sans-serif;
+  text-align:center;
 }
 
 .minimise {
@@ -262,11 +267,11 @@ background-color: rgba(255, 255, 255, 0.9);
   align-items: center;
   justify-content: center;
   height: 30px;
-  width: 100%;
+  width: 90%;
   transform: rotate(95deg);
   background-color: #ffffff;
   margin-top: 100px;
-  margin-left: -20%;
+  margin-left: -15%;
   position: absolute;
   z-index: -1;
   border-top: 2px solid black;
