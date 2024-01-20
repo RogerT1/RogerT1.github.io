@@ -1,0 +1,102 @@
+.about {
+  border-radius: 5px;
+  background-image: url("images/iamge2.jpg");
+  background-size: cover;
+  left: 44%;
+  transform: translateX(-44%);
+  width: 400px;
+  height: 150px;
+  position: absolute;
+  line-height: 100px;
+  z-index: 3;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 75px;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border-left: 2px solid #000; /* Border on the left edge */
+  border-bottom: 2px solid #000; /* Border on the bottom edge */
+  border-top: 2px solid #000; /* Border on the bottom edge */
+  border-right: 2px solid #000; /* Border on the left edge */
+  transition: 0.5s;
+}
+
+.about:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+#aboutme {
+  background-size: cover;
+  background-position: bottom;
+  background-color: rgba(255, 255, 255, 0.8);
+
+  border-bottom: 2px solid #000;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  border-top: 2px solid #000;
+  border-radius: 5px;
+  position: absolute;
+  left: 44%;
+  transform: translateX(-44%);
+  max-width: 400px;
+  margin-top: 250px;
+  opacity: 0;
+  padding: 20px;
+  visibility: hidden;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+#aboutme.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.white {
+  height: 1000px;
+  width: 100%;
+  background-color: #ffffff;
+  background-image: url("images/paper.jpg");
+  position: relative;
+  z-index: -101;
+  /* border-top: 2px solid black;
+  border-bottom: 2px solid black; */
+}
+
+.background1 {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  position: relative;
+  z-index: -100;
+
+  overflow: hidden;
+}
+
+.background1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0) 20%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.background1 img {
+  max-width: 100%; /* Set maximum width for the image */
+  width: 100%; /* Ensure the image doesn't exceed its container */
+  height: auto; /* Maintain aspect ratio */
+}
