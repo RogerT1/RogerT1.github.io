@@ -81,35 +81,6 @@
   height: 100%;
 }
 
-.line1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 30px;
-  width: 100%;
-  transform: rotate(95deg);
-  background-color: #ffffff;
-  margin-top: 100px;
-  margin-left: -20%;
-  position: absolute;
-  z-index: -1;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-}
-.line2 {
-  height: 30px;
-  width: 6000px;
-
-  background-color: #ffffff;
-  margin-top: 400px;
-  margin-left: 29.2%;
-  position: absolute;
-  z-index: -1;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-}
-
-
 .section2 {
   background-color: #d3d3d328;
   height: 100px; /* Adjust the height as needed */
@@ -138,7 +109,7 @@
   background-image: url("images/iamge2.jpg");
   background-size: cover;
   height: 300px;
-  width: 336px;
+  width: 17.5%;
   position: fixed;
   z-index: 900;
   top: 0;
@@ -173,8 +144,8 @@
 }
 
 #maintext {
-  margin-left: 220px; /* Same as the width of the side navigation bar */
-  margin-right: 200px;
+  margin-left: 18%; 
+  margin-right: 18%;
 
   transition: margin-left 0.5s;
   padding-bottom: 40px;
@@ -182,9 +153,8 @@
 
 h2 {
   padding-top: 40px;
-  margin-left: 220px; /* Same as the width of the side navigation bar */
-  margin-right: 220px;
-
+  margin-left: 18%; 
+  margin-right: 18%;
   transition: margin-left 0.5s;
 }
 

@@ -26,6 +26,11 @@ document.querySelectorAll(".about").forEach((anchor) => {
 
     hiddenText1 = document.getElementById("aboutme");
     hiddenText1.classList.toggle("show"); 
+    hiddenText1 = document.getElementById("aboutme1");
+    setTimeout(function() {
+        hiddenText1.classList.toggle("show"); 
+    }, 3000);
+    
     biggerBox = document.querySelector(".biggerbox");
     if (biggerBox.style.borderBottom === "none") {
         biggerBox.style.borderBottom = "2px solid #000";
