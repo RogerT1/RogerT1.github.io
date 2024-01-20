@@ -73,36 +73,63 @@
   height: 100%;
 }
 
-#about {
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
   width: 200px;
   font-size: 22px;
   text-align: center;
-  margin-top: -190px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white; /* Set the background color to white */
-  padding: 20px; /* Add padding to create space between text and box edges */
-  border: 2px solid #333; /* Set border color and thickness */
-  text-align: center; /* Center-align text */
+  margin-top: 140px;
+  background-color: white;
+  padding: 20px;
+  text-decoration: none;
+  color:rgb(0, 0, 0);
+  border-left: 2px solid #000; /* Border on the left edge */
+  border-bottom: 2px solid #000; /* Border on the bottom edge */
+  border-top: 2px solid #000; /* Border on the bottom edge */
+  border-right: 2px solid #000; /* Border on the left edge */
 }
 
+.about a:hover {
+  background-color: #d7afaf;
+}
+
+.biggerbox {
+  width: 228px;
+  height: 100px;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 125px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white; /* Set the background color to white */
+  padding: 20px; /* Add padding to create space between text and box edges */
+  border-left: 2px solid #000; /* Border on the left edge */
+  border-top: 2px solid #000; /* Border on the bottom edge */
+  border-right: 2px solid #000; /* Border on the left edge */
+  text-align: center; /* Center-align text */
+  
+}
 
 .background1 {
   display: flex;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-  max-width: 100%; 
-  height: auto;
-  overflow: hidden;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  position: relative;
   z-index: -100;
-  margin-left: 30px;
-  margin-right: 100px;
-  margin-top: -120px;
-  padding-top: 140px;
-  padding-bottom: 30px;
+  padding: 20px;
+}
+
+.background1 img {
+  max-width: 1800px; /* Set maximum width for the image */
+  width: 100%; /* Ensure the image doesn't exceed its container */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .section2 {

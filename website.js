@@ -8,7 +8,7 @@ document.querySelectorAll(".sidenav a").forEach((anchor) => {
 
     if (targetId === 'about') {
         window.scrollTo({
-          top: targetElement.offsetTop - 300,
+          top: targetElement.offsetTop - 1000,
           behavior: "smooth",
         });
     } else {
