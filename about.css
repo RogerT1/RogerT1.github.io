@@ -5,9 +5,9 @@
   left: 44%;
   transform: translateX(-44%);
   width: 20%;
+  max-width: 384px;
   height: 150px;
   position: absolute;
-  
   z-index: 3;
   font-size: 180%;
   text-align: center;
@@ -24,6 +24,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .about:hover {
@@ -35,15 +36,18 @@
   background-size: cover;
   background-position: bottom;
   background-color: rgba(255, 255, 255, 0.9);
-
+  display: flex;
+  align-items: center;
   border-bottom: 2px solid #000;
   border-left: 2px solid #000;
   border-right: 2px solid #000;
   border-top: 2px solid #000;
   border-radius: 5px;
   position: absolute;
-  left: 65%;
-  height: 225px;
+  word-wrap: break-word;
+  left: 63.5%;
+  min-height: 225px;
+  height: auto;
   width: 33%;
   max-width: 800px;
   margin-top: 32px;
@@ -51,20 +55,47 @@
   padding: 20px;
   visibility: hidden;
   transition: opacity 0.6s ease, visibility 0.6s ease;
+  word-wrap: break-word;
+  max-height: 100px;
+  overflow: hidden;
+  float: right;
 }
 
 .aboutme_appear img {
-    max-width: 190px;
-    border-radius: 1000px;
-    margin-top: -88px;
-    margin-left: 69%;
-    position: absolute;
+  max-width: 8vw;
+  height: auto;
+  border-radius: 1000px;
+  width: 100%;
+  margin-left: 50px;
 }
 
 .aboutme_appear p {
-    max-width: 65%;
-    font-size: 20px;
-    margin-left: 10px;
+  color: black;
+
+  font-size: 1.2vw;
+  margin-left: 2%;
+}
+
+@media screen and (max-width: 1200px) {
+  .aboutme_appear p {
+    font-size: 1.5vw; /* Adjust font size for smaller screens */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .aboutme_appear p {
+    font-size: 1vw; /* Adjust font size for larger screens */
+  }
+}
+
+@media (min-width: 125%) {
+  body {
+    transform: scale(1.25); /* Set the initial scale to 125% */
+  }
+
+  .zoomed {
+    transform: scale(2); /* Set the additional scale for the specific element */
+  }
 }
 
 .aboutme_appear.show {
@@ -73,11 +104,108 @@
 }
 
 #aboutme1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   visibility: hidden;
   transition: opacity 0.6s ease, visibility 0.6s ease;
-  width: 1000px;
-  margin-left: -640px;
+  width: 15%;
+  height: auto;
+  max-width: calc(0.15 * 1920);
+  max-height: 800px;
+  padding-top: 20px;
+  left: 45%;
+  transform: translateX(-60%);
   margin-top: 350px;
+  visibility: visible;
+  font-size: 1vw;
+  font-family: "Sora", sans-serif;
+}
+
+#aboutme2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  visibility: hidden;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+  width: 15%;
+  height: auto;
+  max-width: calc(0.15 * 1920);
+  max-height: 800px;
+  padding-top: 20px;
+  left: 60%;
+  transform: translateX(-60%);
+  visibility: visible;
+  margin-top: 350px;
+  font-size: 1vw;
+  font-family: "Sora", sans-serif;
+}
+
+#aboutme3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  visibility: hidden;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+  width: 15%;
+  height: auto;
+  max-width: calc(0.15 * 1920);
+  max-height: 800px;
+  padding-top: 20px;
+  left: 75%;
+  visibility: visible;
+  transform: translateX(-60%);
+  margin-top: 350px;
+  font-size: 1vw;
+  font-family: "Sora", sans-serif;
+}
+
+#aboutme4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  visibility: hidden;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+  width: 15%;
+  height: auto;
+  max-width: calc(0.15 * 1920);
+  max-height: 800px;
+  padding-top: 20px;
+  left: 90%;
+  transform: translateX(-60%);
+  visibility: visible;
+  margin-top: 350px;
+  font-size: 1vw;
+  font-family: "Sora", sans-serif;
+}
+
+.minimise {
+    display: flex;
+  visibility: hidden;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+   opacity: 0;
+  left: 44.5%;
+  z-index: 200;
+  max-width: 30px;
+  max-height: 30px;
+  width: auto;
+  height: auto;
+  border-radius: 3px;
+  margin-top: 30px;
+background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+}
+.minimise:hover {
+    background-color: rgb(255, 231, 231);
+    cursor: pointer;
+}
+
+.minimise img {
+  border: 2px solid black;
+}
+
+.minimise.show {
+  opacity: 1;
   visibility: visible;
 }
 
@@ -93,6 +221,7 @@
 }
 
 .background1 {
+    
   display: flex;
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
@@ -145,8 +274,8 @@
 }
 .line2 {
   height: 30px;
-  width: 6000px;
-
+  width: 100%;
+  overflow: hidden;
   background-color: #ffffff;
   margin-top: 280px;
   margin-left: 29.7%;
@@ -156,18 +285,6 @@
   border-bottom: 2px solid black;
 }
 
-.line3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 30px;
-  width: 340px;
-  transform: rotate(90deg);
-  background-color: #ffffff;
-  margin-top: 100px;
-  margin-left: 52%;
-  position: absolute;
-  z-index: -1;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+body {
+  overflow-x: hidden;
 }
