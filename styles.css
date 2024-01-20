@@ -2,13 +2,19 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'DM Serif Display', serif;
-  /* font-family: "Sora", sans-serif; */
+  font-family: "Marcellus", serif;
+
+  /*
+  font-family: 'Passion One', sans-serif;
+  font-family: "DM Serif Display", serif; 
+  font-family: "Sora", sans-serif; 
+  */
 }
 
 .navbar {
-  background: rgba(255, 255, 255, 1);
+  background: rgb(244, 244, 244);
   /* outline: 2px solid #EEEEEE; */
+  width: 100%;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -26,7 +32,7 @@
   z-index: 1;
   width: 100%;
   max-width: 100%;
-  margin-right: auto;
+  margin-right: 0;
   margin-left: auto;
   padding-right: 50px;
   padding-left: 50px;
@@ -54,7 +60,7 @@
 }
 
 .navbar_item {
-  height: 80px;
+  height: 0px;
 }
 
 .navbar_link {
@@ -67,68 +73,36 @@
   height: 100%;
 }
 
+#about {
+  width: 200px;
+  font-size: 22px;
+  text-align: center;
+  margin-top: -190px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white; /* Set the background color to white */
+  padding: 20px; /* Add padding to create space between text and box edges */
+  border: 2px solid #333; /* Set border color and thickness */
+  text-align: center; /* Center-align text */
+}
+
+
 .background1 {
   display: flex;
   justify-content: center;
-  align-items: center;
-
-  margin-left: 100px;
+  align-content: center;
+  width: 100%;
+  max-width: 100%; 
+  height: auto;
+  overflow: hidden;
+  z-index: -100;
+  margin-left: 30px;
   margin-right: 100px;
-  margin-top: 50px;
-}
-
-.hover-container {
-  position: relative;
-  display: inline-block;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -300px;
-  z-index: 2;
-}
-
-.hover-overlay {
-  position: absolute;
-  top: 50%; /* Center the overlay vertically */
-  left: 50%; /* Center the overlay horizontally */
-  transform: translate(-50%, -50%); /* Center the overlay perfectly */
-  width: 50%; /* Set a fixed width */
-  height: 500px; /* Set a fixed height */
-  background-color: #dcb8b8;
-  border-radius: 10px; /* Adjust the border-radius for curved corners */
-  opacity: 0;
-  transform-origin: center center; /* Ensure scaling is done from the center */
-  transition: opacity 1s ease, transform 1s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.hover2-overlay {
-  position: absolute;
-  top: 50%; /* Center the overlay vertically */
-  left: 50%; /* Center the overlay horizontally */
-  transform: translate(-50%, -50%); /* Center the overlay perfectly */
-  width: 55%; /* Set a fixed width */
-  height: 600px; /* Set a fixed height */
-  background-color: rgba(249, 231, 231, 0.7);
-  border-radius: 10px; /* Adjust the border-radius for curved corners */
-  opacity: 0;
-  transform-origin: center center; /* Ensure scaling is done from the center */
-  transition: opacity 1s ease, transform 1s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.hover-container:hover .hover-overlay {
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
-}
-.hover-container:hover .hover2-overlay {
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
+  margin-top: -120px;
+  padding-top: 140px;
+  padding-bottom: 30px;
 }
 
 .section2 {
@@ -142,10 +116,10 @@
   justify-content: center;
 }
 .section3 {
-  background-color: #dcb8b8;
+  background-color: #feecec;
   height: 400px; /* Adjust the height as needed */
   width: 100%;
-  margin-top: 400px;
+  /* margin-top: 400px; */
   z-index: 1;
   display: flex;
   align-items: center;
@@ -155,42 +129,53 @@
 /* Side Navigation Bar Styles */
 .sidenav {
   border-radius: 20px;
-    height: 250px;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.5); /* 0.8 transparency */
-    overflow-x: hidden;
-    padding-top: 20px;
-    transition: 0.5s;
-    margin-top: 200px;
-    
+  height: 250px;
+  width: 220px;
+  position: fixed;
+  z-index: 900;
+  top: 0;
+  left: 0;
+  background-color: rgba(221, 205, 205, 0.9); /* 0.8 transparency */
+  overflow-x: hidden;
+  padding-top: 20px;
+  transition: 0.5s;
+  margin-top: 200px;
+  margin-left: -20px;
 }
 
 /* Links in the Side Navigation Bar */
 .sidenav a {
-    padding: 15px 8px;
-    text-decoration: none;
-    font-size: 18px;
-    color: rgb(0, 0, 0);
-    display: block;
-    transition: 0.3s;
-    padding-left: 50px;
+  padding: 15px 8px;
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  display: block;
+  transition: 0.3s;
+  padding-left: 70px;
 }
 
 /* Change color on hover */
 .sidenav a:hover {
-    background-color: #555;
+  background-color: #b5b5b5;
 }
 
 /* Main Content Styles */
 .main {
-    margin-left: 200px; /* Same as the width of the side navigation bar */
-    margin-right: 200px;
-    padding: 20px;
-    transition: margin-left 0.5s;
+  transition: margin-left 0.5s;
+}
+
+#maintext {
+  margin-left: 220px; /* Same as the width of the side navigation bar */
+  margin-right: 200px;
+
+  transition: margin-left 0.5s;
+}
+
+h2 {
+  margin-left: 220px; /* Same as the width of the side navigation bar */
+  margin-right: 220px;
+
+  transition: margin-left 0.5s;
 }
 
 .footer {
