@@ -1,18 +1,18 @@
 .about {
-  border-radius: 5px;
+  border-radius: 1000px;
   background-image: url("images/iamge2.jpg");
   background-size: cover;
-  left: 44%;
+  left: 50%;
   transform: translateX(-44%);
   width: 20%;
-  max-width: 384px;
-  height: 150px;
+  max-width: auto;
+  height: 7vw;
   position: absolute;
   z-index: 3;
-  font-size: 180%;
+  font-size: 1.6vw;
   text-align: center;
   margin-top: 75px;
-  background-color: rgba(255, 255, 255, 0.95);
+  color: rgba(255, 255, 255, 0.95);
   padding: 20px;
   text-decoration: none;
   color: rgb(0, 0, 0);
@@ -28,7 +28,6 @@
 }
 
 .about:hover {
-  cursor: pointer;
   opacity: 0.5;
 }
 
@@ -38,8 +37,7 @@
   background-color: rgba(255, 255, 255, 0.9);
   display: flex;
   align-items: center;
-  
-  
+
   border-right: 2px solid #000;
   border-top: 2px solid #000;
   border-radius: 5px;
@@ -74,12 +72,6 @@
 
   font-size: 1.2vw;
   margin-left: 2%;
-}
-
-@media screen and (max-width: 1200px) {
-  .aboutme_appear p {
-    font-size: 1.5vw; /* Adjust font size for smaller screens */
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -120,9 +112,8 @@
   margin-top: 350px;
   visibility: visible;
   font-size: 1vw;
-  text-align:center;
+  text-align: center;
 }
-
 
 #aboutme2 {
   display: flex;
@@ -141,7 +132,7 @@
   visibility: visible;
   margin-top: 350px;
   font-size: 1vw;
-  text-align:center;
+  text-align: center;
 }
 
 #aboutme3 {
@@ -161,7 +152,7 @@
   transform: translateX(-60%);
   margin-top: 350px;
   font-size: 1vw;
-  text-align:center;
+  text-align: center;
 }
 
 #aboutme4 {
@@ -181,14 +172,14 @@
   visibility: visible;
   margin-top: 350px;
   font-size: 1vw;
-  text-align:center;
+  text-align: center;
 }
 
 .minimise {
-    display: flex;
+  display: flex;
   visibility: hidden;
   transition: opacity 0.6s ease, visibility 0.6s ease;
-   opacity: 0;
+  opacity: 0;
   left: 44.5%;
   z-index: 200;
   max-width: 30px;
@@ -197,12 +188,12 @@
   height: auto;
   border-radius: 3px;
   margin-top: 30px;
-background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
 }
 .minimise:hover {
-    background-color: rgb(255, 231, 231);
-    cursor: pointer;
+  background-color: rgb(255, 231, 231);
+  cursor: pointer;
 }
 
 .minimise img {
@@ -215,7 +206,7 @@ background-color: rgba(255, 255, 255, 0.9);
 }
 
 .white {
-  height: 1000px;
+  height: auto;
   width: 100%;
   background-color: #ffffff;
   background-image: url("images/paper.jpg");
@@ -226,14 +217,13 @@ background-color: rgba(255, 255, 255, 0.9);
 }
 
 .background1 {
-    
+  margin-top: -40px;
+  min-height: 100vh;
   display: flex;
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
   position: relative;
   z-index: -100;
-
-  overflow: hidden;
 }
 
 .background1::before {
@@ -257,9 +247,9 @@ background-color: rgba(255, 255, 255, 0.9);
 }
 
 .background1 img {
-  max-width: 100%; /* Set maximum width for the image */
-  width: 100%; /* Ensure the image doesn't exceed its container */
-  height: auto; /* Maintain aspect ratio */
+  width: 100vw; /* Make sure the image takes up the full width of the container */
+  height: 100vh; /* Make sure the image takes up the full height of the container */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
 }
 
 .line1 {
@@ -267,7 +257,7 @@ background-color: rgba(255, 255, 255, 0.9);
   align-items: center;
   justify-content: center;
   height: 30px;
-  width: 90%;
+  width: 100%;
   transform: rotate(95deg);
   background-color: #ffffff;
   margin-top: 100px;
