@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="about.css" />
     <link rel="stylesheet" href="aboutmedia.css" />
+    <link rel="stylesheet" href="background.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,9 +29,10 @@
     <!-- header bar -->
     <nav class="navbar">
       <div class="navbar_container">
-        <a href="/personalwebsite/" id="logo"><b>Roger Truong's Portfolio</b></a>
-       
-        
+        <a href="/personalwebsite/" id="logo"
+          ><b>Roger Truong's Portfolio</b></a
+        >
+
         <div class="navbar_toggle" id="mobile-menu">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -45,7 +47,6 @@
             >
               LinkedIn
             </a>
-            
           </li>
           <li class="navbar_item">
             <a
@@ -68,57 +69,33 @@
     <!-- Main Content -->
     <div class="main">
       <!-- about me button -->
-
-      <div class="aboutme-btn">
-        <div href="/" class="about" id="about">⊳ ABOUT ME ⊲</div>
-      </div>
-      <button class="rewind" id="rewind">
-        <img src="images/minimise.png" alt="" class="minimise" id="minimise1" />
-      </button>
-
-      
-
-      <div class="aboutme_appear" id="aboutme">
-        <p>
-          Welcome to my page! I'm Roger Truong and I am a 2nd year student at
-          UNSW completing a Bachelor's Degree of Computer Science. I'm looking
-          for an opportunity to show my potential and use my skills where it
-          matters.
-        </p>
-
-        <img class="image" src="images/me1.jpg" alt="Your Image Description" />
-      </div>
-      <div class="aboutme_appear" id="aboutme1">
-        <b>Passion for Coding:</b>
-        <br />
-        Fascinated by the possibilities and motivated to contribute to
-        innovative solutions.
-      </div>
-
-      <div class="aboutme_appear" id="aboutme2">
-        <b>Creating and Inspiring:</b><br />
-        My goal is to create impactful solutions that inspire positive change,
-        driven by the power of innovation.
-      </div>
-
-      <div class="aboutme_appear" id="aboutme3">
-        <b>Leadership Roles:</b><br />
-        Currently serving as President of UNSW TCSA and Marketing Director at
-        UNSW Food Lovers Society, showcasing organisational and leadership
-        skills.
-      </div>
-      <div class="aboutme_appear" id="aboutme4">
-        <b>Technical Proficiency: </b> <br />
-        Proficient in languages like C, Python, Javascript, Typescript, SQL, and
-        Assembly, well-equipped to tackle complex problems.
-      </div>
-
-      <!-- <div class="white"></div> -->
       <div class="background1">
-        <img src="images/berserk.png" alt="" />
+        <div class="background">
+          <img src="images/berserk.png" alt="" />
+        </div>
+
+        <div class="aboutme-btn" id="about">
+          <div href="/" class="about">⊳ ABOUT ME ⊲</div>
+          <div href="/" class="about1">⊳ ABOUT ME ⊲</div>
+        </div>
+
+        <div class="aboutme_appear" id="aboutSlider1">
+          <p>
+            Welcome to my page! I'm Roger Truong and I am a 2nd year student at
+            UNSW completing a Bachelor's Degree of Computer Science. I'm looking
+            for an opportunity to show my potential and use my skills where it
+            matters.
+          </p>
+        </div>
+        <div class="aboutme_appear1" id="aboutSlider2">
+          <img
+            class="image"
+            src="images/me1.jpg"
+            alt="Your Image Description"
+          />
+        </div>
       </div>
 
-      <div class="section3"></div>
       <section id="projects">
         <h2>Projects</h2>
         <p id="maintext">

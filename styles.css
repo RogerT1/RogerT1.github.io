@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box;
+  
   margin: 0;
   padding: 0;
   font-family: "Marcellus", serif;
@@ -15,12 +15,7 @@
   font-family: "Sora", sans-serif; 
   */
 }
-#navbarOutline {
-  position: fixed;
-  margin-top: 15px;
-  background: rgb(232, 163, 163);
-  color: #fff;
-}
+
 
 .navbar {
   
@@ -29,7 +24,7 @@
  
   /* outline: 2px solid #EEEEEE; */
   width: 100%;
-  height: 80px;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,16 +150,9 @@
 }
 
 /* Main Content Styles */
-.main {
-  transition: margin-left 0.5s;
-}
-
 #maintext {
-  margin-left: 18%; 
+  margin-left: 18%;
   margin-right: 18%;
-
-  transition: margin-left 0.5s;
-  padding-bottom: 40px;
 }
 
 h2 {
@@ -175,9 +163,10 @@ h2 {
 }
 
 .footer {
+  margin-top: 10vh;
   position: relative;
   bottom: 0;
   width: 100%;
-  background-color: #dcb8b8;
-  height: 100px;
+  background-color: #000000;
+  height: 30vh;
 }

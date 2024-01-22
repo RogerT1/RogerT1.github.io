@@ -50,44 +50,44 @@ function isElementVisible(element) {
 
 var buttonClicked = false;
 
-document.getElementById("rewind").addEventListener("click", function () {
-  buttonClicked = true;
-  setTimeout(function () {
-    buttonClicked = false;
-  }, 2000);
-  var hiddenText1 = document.getElementById("aboutme");
+// document.getElementById("rewind").addEventListener("click", function () {
+//   buttonClicked = true;
+//   setTimeout(function () {
+//     buttonClicked = false;
+//   }, 2000);
+//   var hiddenText1 = document.getElementById("aboutme");
 
-  var hiddenmin = document.getElementById("minimise1");
-  if (isElementVisible(hiddenmin)) {
-    hiddenmin.classList.toggle("show");
-  }
+//   var hiddenmin = document.getElementById("minimise1");
+//   if (isElementVisible(hiddenmin)) {
+//     hiddenmin.classList.toggle("show");
+//   }
 
-  var hiddenText1 = document.getElementById("aboutme");
-  hiddenText1.classList.toggle("show");
+//   var hiddenText1 = document.getElementById("aboutme");
+//   hiddenText1.classList.toggle("show");
 
-  var hiddenText2 = document.getElementById("aboutme1");
+//   var hiddenText2 = document.getElementById("aboutme1");
 
-  setTimeout(function () {
-    hiddenText2.classList.toggle("show");
-  }, 500);
+//   setTimeout(function () {
+//     hiddenText2.classList.toggle("show");
+//   }, 500);
 
-  var hiddenText5 = document.getElementById("aboutme2");
+//   var hiddenText5 = document.getElementById("aboutme2");
 
-  setTimeout(function () {
-    hiddenText5.classList.toggle("show");
-  }, 1000);
+//   setTimeout(function () {
+//     hiddenText5.classList.toggle("show");
+//   }, 1000);
 
-  var hiddenText3 = document.getElementById("aboutme3");
-  setTimeout(function () {
-    hiddenText3.classList.toggle("show");
-  }, 1500);
+//   var hiddenText3 = document.getElementById("aboutme3");
+//   setTimeout(function () {
+//     hiddenText3.classList.toggle("show");
+//   }, 1500);
 
-  var hiddenText4 = document.getElementById("aboutme4");
-  setTimeout(function () {
-    hiddenText4.classList.toggle("show");
-  }, 2000);
-  
-});
+//   var hiddenText4 = document.getElementById("aboutme4");
+//   setTimeout(function () {
+//     hiddenText4.classList.toggle("show");
+//   }, 2000);
+
+// });
 
 var isRunning = false;
 
@@ -145,8 +145,21 @@ document.querySelectorAll(".about").forEach((anchor) => {
         }, 2000);
       }
     }
-    
+
     isRunning = false;
-    
   });
 });
+
+var aboutSlider1 = document.getElementById("aboutSlider1");
+var yPosition = window.scrollY;
+if (yPosition >= 0) {
+  aboutSlider1.style.left = 0;
+  aboutSlider1.style.opacity = "100%";
+}
+
+var aboutSlider2 = document.getElementById("aboutSlider2");
+var yPosition = window.scrollY;
+if (yPosition >= 0) {
+  aboutSlider2.style.right = 0;
+  aboutSlider2.style.opacity = "100%";
+}
