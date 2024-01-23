@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="about.css" />
     <link rel="stylesheet" href="aboutmedia.css" />
     <link rel="stylesheet" href="background.css" />
+    <link rel="stylesheet" href="footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,11 +20,8 @@
     />
   </head>
   <body>
-    <!-- Side Navigation Bar -->
-
-    <!-- header bar -->
-
     <div class="scroll-container">
+      <!-- Side Navigation -->
       <div class="sidenav">
         <a href="#about">⊳ ABOUT ME</a>
         <a href="#projects">⊳ PROJECTS</a>
@@ -31,11 +29,12 @@
         <a href="#skills">⊳ SKILLS</a>
       </div>
 
+      <!-- Header Bar -->
       <nav class="navbar">
         <div class="navbar_container">
           <a href="/personalwebsite/" id="logo"
-            ><b>Roger Truong's Portfolio</b></a
-          >
+            ><b>Roger Truong's Portfolio</b>
+          </a>
 
           <div class="navbar_toggle" id="mobile-menu">
             <span class="bar"></span>
@@ -70,18 +69,22 @@
           </ul>
         </div>
       </nav>
+
       <!-- Main Content -->
       <div class="main">
-        <!-- about me button -->
-        <div class="background1">
+
+        <!-- About Me Section  -->
+        <div class="firstSection">
           <div class="background">
             <img src="images/berserk.png" alt="" />
           </div>
 
+          <!-- About Me Title -->
           <div class="aboutme-btn" id="about">
             <div href="/" class="about">⊳ ABOUT ME ⊲</div>
           </div>
 
+          <!-- About Me Text -->
           <div class="aboutme_appear" id="aboutSlider1">
             <p>
               Welcome to my page! I'm Roger Truong and I am a 2nd year student
@@ -90,6 +93,8 @@
               where it matters.
             </p>
           </div>
+
+          <!-- About Me Image  -->
           <div class="aboutme_appear1" id="aboutSlider2">
             <img
               class="image"
@@ -98,19 +103,30 @@
             />
           </div>
         </div>
-        <!-- <div class="blankSection">hello</div> -->
+        <!-- Project Section -->
         <section id="projects">
           <h2>Projects</h2>
 
           <div class="projectGrid">
             <div class="projectImage">
               <div class="glassy-filter"></div>
+              <div class="projectText">Discord Gaming Bot</div>
               <!-- <img src="images/clouds.jpg" alt="" /> -->
-              <video width="" height="360" preload="auto" controls="false" autoplay loop muted>
+              <video
+                width=""
+                height="360"
+                preload="auto"
+                controls="false"
+                autoplay
+                playsinline
+                style="pointer-events: none"
+                loop
+                muted
+              >
                 <source src="images/HOTPOT.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-              <div class="projectText">Discord Gaming Bot</div>
+
               <a
                 class="learnMore"
                 href="https://chat.openai.com/c/f5a482e3-e1b0-4e64-aeb1-9e3156288f1e"
@@ -121,13 +137,23 @@
             </div>
 
             <div class="projectImage" id="oneTwo">
+              <div class="projectText">Discord Gaming Bot</div>
               <div class="glassy-filter"></div>
-              <!-- <img src="images/clouds.jpg" alt="" /> -->
-              <video width="" height="360" controls autoplay loop muted>
+              <video
+                width=""
+                height="360"
+                preload="auto"
+                controls="false"
+                autoplay
+                playsinline
+                style="pointer-events: none"
+                loop
+                muted
+              >
                 <source src="images/HOTPOT.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-              <div class="projectText">Discord Gaming Bot</div>
+
               <a
                 class="learnMore"
                 href="https://chat.openai.com/c/f5a482e3-e1b0-4e64-aeb1-9e3156288f1e"
@@ -138,12 +164,22 @@
             </div>
             <div class="projectImage" id="twoOne">
               <div class="glassy-filter"></div>
-              <!-- <img src="images/clouds.jpg" alt="" /> -->
-              <video width="" height="360" controls autoplay loop muted>
+              <div class="projectText">Discord Gaming Bot</div>
+              <video
+                width=""
+                height="360"
+                preload="auto"
+                controls="false"
+                autoplay
+                playsinline
+                style="pointer-events: none"
+                loop
+                muted
+              >
                 <source src="images/HOTPOT.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-              <div class="projectText">Discord Gaming Bot</div>
+
               <a
                 class="learnMore"
                 href="https://chat.openai.com/c/f5a482e3-e1b0-4e64-aeb1-9e3156288f1e"
@@ -153,33 +189,23 @@
               </a>
             </div>
             <div class="projectImage" id="twoTwo">
-              <div class="glassy-filter"></div>
-              <img src="images/clouds.jpg" alt="" />
               <div class="projectText">Discord Gaming Bot</div>
-              <a
-                class="learnMore"
-                href="https://chat.openai.com/c/f5a482e3-e1b0-4e64-aeb1-9e3156288f1e"
-                target="blank"
+              <div class="glassy-filter"></div>
+              <video
+                width=""
+                height="360"
+                preload="auto"
+                controls="false"
+                autoplay
+                playsinline
+                style="pointer-events: none"
+                loop
+                muted
               >
-                Learn More
-              </a>
-            </div>
-            <div class="projectImage" id="threeOne">
-              <div class="glassy-filter"></div>
-              <img src="images/clouds.jpg" alt="" />
-              <div class="projectText">Discord Gaming Bot</div>
-              <a
-                class="learnMore"
-                href="https://chat.openai.com/c/f5a482e3-e1b0-4e64-aeb1-9e3156288f1e"
-                target="blank"
-              >
-                Learn More
-              </a>
-            </div>
-            <div class="projectImage" id="threeTwo">
-              <div class="glassy-filter"></div>
-              <img src="images/clouds.jpg" alt="" />
-              <div class="projectText">Discord Gaming Bot</div>
+                <source src="images/HOTPOT.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+
               <a
                 class="learnMore"
                 href="https://chat.openai.com/c/f5a482e3-e1b0-4e64-aeb1-9e3156288f1e"
@@ -216,12 +242,22 @@
             culpa qui officia deserunt mollit anim id est laborum..
           </p>
         </section>
-        <footer>
-          <div class="footer"></div>
-        </footer>
+        <!-- Footer Section -->
+        <div class="footer__container">
+          <div class="footer__link--items">
+            <ul>
+              <li><a href="/">Instagram</a></li>
+              <li><a href="/">Facebook</a></li>
+              <li><a href="/">GitHub</a></li>
+              <li><a href="/">LinkedIn</a></li>
+              <li><a href="/">Resume</a></li>
+            </ul>
+          </div>
+
+          <p class="website__rights">© RT 2024. All rights reserved</p>
+        </div>
       </div>
     </div>
-
     <script src="website.js"></script>
   </body>
 </html>
