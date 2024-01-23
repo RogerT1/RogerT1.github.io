@@ -16,8 +16,27 @@
   */
 }
 
+
+body {
+  margin: 0rem;
+  overflow:hidden;
+}
+
+
+.scroll-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  
+  margin-right: -15px; /* Adjust for scrollbar width */
+}
+
 /* Main Content Styles */
 .maintext {
+  color: white;
   margin-left: 18%;
   margin-right: 18%;
 }
@@ -39,6 +58,7 @@ h2 {
   margin-right: 18%;
   transition: margin-left 0.5s;
   font-size: 4vh;
+  color: white  ;
 }
 
 .projectGrid {
@@ -152,7 +172,7 @@ h2 {
   justify-content: center;
 }
 .section3 {
-  background-color: #ffffff;
+  
   height: 120px; /* Adjust the height as needed */
   width: 100%;
   /* margin-top: 400px; */

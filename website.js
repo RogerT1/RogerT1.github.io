@@ -5,14 +5,14 @@ document.querySelectorAll(".sidenav a").forEach((anchor) => {
     const targetId = this.getAttribute("href").substring(1);
     // this gets the tag without the #
     const targetElement = document.getElementById(targetId);
-
+    const scrollContainer = document.querySelector(".scroll-container");
     if (targetId === "about") {
-      window.scrollTo({
+      scrollContainer.scrollTo({
         top: targetElement.offsetTop - 1000,
         behavior: "smooth",
       });
     } else {
-      window.scrollTo({
+      scrollContainer.scrollTo({
         top: targetElement.offsetTop - 100,
         behavior: "smooth",
       });
@@ -160,3 +160,35 @@ document.addEventListener("DOMContentLoaded", function () {
   aboutSlider2.style.right = 0;
   aboutSlider2.style.opacity = "100%";
 });
+
+document.addEventListener("touchmove", handleTouchMove, { passive: false });
+document.addEventListener("wheel", handleWheel, { passive: false });
+
+document.addEventListener("keydown", function(event) {
+  if (event.ctrlKey && event.key === "=") {
+    event.preventDefault();
+  }
+  
+
+});
+
+
+document.addEventListener("keydown", function (event) {
+  if (event.ctrlKey && event.key === "-") {
+    event.preventDefault();
+  }
+});
+
+function handleTouchMove(event) {
+  if (event.touches.length > 1) {
+    event.preventDefault();
+  }
+}
+
+function handleWheel(event) {
+  if (event.ctrlKey) {
+    // If Ctrl key is pressed (for zooming on certain systems), prevent zoom
+    event.preventDefault();
+  }
+}
+
