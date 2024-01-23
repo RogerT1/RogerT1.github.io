@@ -16,6 +16,58 @@
   */
 }
 
+/* Main Content Styles */
+.maintext {
+  margin-left: 18%;
+  margin-right: 18%;
+}
+
+/* .blankSection {
+  background-image: url(images/paper.jpg);
+  background-size:cover;
+  background-color: #b5b5b5;
+  height:20vh;
+  
+  z-index: 10;
+  display:flex;
+  position:relative;
+} */
+
+h2 {
+  padding-top: 40px;
+  margin-left: 18%; 
+  margin-right: 18%;
+  transition: margin-left 0.5s;
+  font-size: 4vh;
+}
+
+.projectGrid {
+  padding: 20px;
+  border: 2px solid #000;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 2 columns of equal width */
+  grid-gap: 20px; /* Adjust the gap between grid items as needed */
+  text-align: center;
+  margin-left: 18%; 
+  margin-right: 18%;
+}
+
+.projectGrid img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#projectText {
+  padding-bottom: 20px;
+}
+
+#projects h2 {
+  text-align: center;
+  padding-bottom: 3vh;
+}
+
+
 
 .navbar {
   
@@ -149,18 +201,7 @@
   background-color: #b5b5b5;
 }
 
-/* Main Content Styles */
-#maintext {
-  margin-left: 18%;
-  margin-right: 18%;
-}
 
-h2 {
-  padding-top: 40px;
-  margin-left: 18%; 
-  margin-right: 18%;
-  transition: margin-left 0.5s;
-}
 
 .footer {
   margin-top: 10vh;

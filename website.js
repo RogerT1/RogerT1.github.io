@@ -149,17 +149,14 @@ document.querySelectorAll(".about").forEach((anchor) => {
     isRunning = false;
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  var aboutSlider1 = document.getElementById("aboutSlider1");
 
-var aboutSlider1 = document.getElementById("aboutSlider1");
-var yPosition = window.scrollY;
-if (yPosition >= 0) {
   aboutSlider1.style.left = 0;
   aboutSlider1.style.opacity = "100%";
-}
 
-var aboutSlider2 = document.getElementById("aboutSlider2");
-var yPosition = window.scrollY;
-if (yPosition >= 0) {
+  var aboutSlider2 = document.getElementById("aboutSlider2");
+
   aboutSlider2.style.right = 0;
   aboutSlider2.style.opacity = "100%";
-}
+});
