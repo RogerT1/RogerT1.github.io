@@ -13,11 +13,27 @@ document.querySelectorAll(".sidenav a").forEach((anchor) => {
       });
     } else {
       scrollContainer.scrollTo({
-        top: targetElement.offsetTop - 100,
+        top: targetElement.offsetTop - 50,
         behavior: "smooth",
       });
     }
   });
+});
+
+document.addEventListener("scroll", function () {
+  const scrollY = window.scrollY;
+
+  if (scrollY > 60) {
+    // Add a class to each experience item to trigger the transition
+    document.getElementById("experience1").classList.add("show-experience");
+    document.getElementById("experience2").classList.add("show-experience");
+    document.getElementById("experience3").classList.add("show-experience");
+  } else {
+    // Remove the class when scrolling out of the specified range
+    document.getElementById("experience1").classList.remove("show-experience");
+    document.getElementById("experience2").classList.remove("show-experience");
+    document.getElementById("experience3").classList.remove("show-experience");
+  }
 });
 
 function isElementVisible(element) {
