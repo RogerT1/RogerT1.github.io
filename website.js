@@ -20,21 +20,28 @@ document.querySelectorAll(".sidenav a").forEach((anchor) => {
   });
 });
 
-document.addEventListener("scroll", function () {
-  const scrollY = window.scrollY;
+// document.querySelectorAll(".projectText1 a").forEach((anchor) => {
+//   anchor.addEventListener("click", function (e) {
+//     e.preventDefault();
 
-  if (scrollY > 60) {
-    // Add a class to each experience item to trigger the transition
-    document.getElementById("experience1").classList.add("show-experience");
-    document.getElementById("experience2").classList.add("show-experience");
-    document.getElementById("experience3").classList.add("show-experience");
-  } else {
-    // Remove the class when scrolling out of the specified range
-    document.getElementById("experience1").classList.remove("show-experience");
-    document.getElementById("experience2").classList.remove("show-experience");
-    document.getElementById("experience3").classList.remove("show-experience");
-  }
-});
+//     const targetId = this.getAttribute("href").substring(1);
+//     // this gets the tag without the #
+//     const targetElement = document.getElementById(targetId);
+//     const scrollContainer = document.querySelector(".scroll-container");
+//     if (targetId === "about") {
+//       scrollContainer.scrollTo({
+//         top: targetElement.offsetTop - 1000,
+//         behavior: "smooth",
+//       });
+//     } else {
+//       scrollContainer.scrollTo({
+//         top: targetElement.offsetTop - 50,
+//         behavior: "smooth",
+//       });
+//     }
+//   });
+// });
+
 
 function isElementVisible(element) {
   if (!element) {

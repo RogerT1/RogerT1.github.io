@@ -1,14 +1,14 @@
 * {
-  
   margin: 0;
   padding: 0;
   font-family: "Marcellus", serif;
-  
+
   font-family: "Passion One", sans-serif;
-  font-family: "DM Serif Display", serif; 
-  font-family: 'Lexend Deca', sans-serif;
-  font-family: 'Lato', sans-serif;
-  font-family: 'Brawler', serif;/*
+  font-family: "DM Serif Display", serif;
+  font-family: "Lexend Deca", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Brawler", serif;
+  font-family: "Lexend Deca", sans-serif; /*
   font-family: 'Nova Square', sans-serif;/*
   font-family: 'Righteous', sans-serif;
   
@@ -16,12 +16,10 @@
   */
 }
 
-
 body {
   margin: 0rem;
-  overflow:hidden;
+  overflow: hidden;
 }
-
 
 .scroll-container {
   position: fixed;
@@ -30,7 +28,7 @@ body {
   right: 0;
   bottom: 0;
   overflow-y: scroll;
-  
+
   margin-right: -15px; /* Adjust for scrollbar width */
 }
 
@@ -54,22 +52,23 @@ body {
 
 h2 {
   padding-top: 40px;
-  margin-left: 18%; 
+  margin-left: 18%;
   margin-right: 18%;
   transition: margin-left 0.5s;
   font-size: 4vh;
-  color: white  ;
+  color: white;
 }
 
 .projectGrid {
   padding: 20px;
   border: 2px solid #000;
-  display:grid;
-  grid-template-columns: repeat(3, 1fr); /* Creates 2 columns of equal width */
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr)); /* Creates 2 columns of equal width */
   grid-gap: 20px; /* Adjust the gap between grid items as needed */
-  text-align: center;
-  margin-left: 18%; 
+
+  margin-left: 18%;
   margin-right: 18%;
+  color: white;
 }
 
 .projectGrid img {
@@ -78,8 +77,39 @@ h2 {
   width: 100%;
 }
 
-#projectText {
-  padding-bottom: 20px;
+.projectText {
+  color: rgb(0, 0, 0);
+  font-size: 1vw;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  padding: 20px;
+  border-radius: 1000px;
+  z-index: 2;
+  text-decoration: none;
+}
+
+.learnMore {
+  color: white;
+  background: rgb(242, 185, 194);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  padding: 20px;
+  border-radius: 1000px;
+  z-index: 2;
+  text-decoration: none;
+  border: 6px solid #ef9999;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+
+.learnMore:hover {
+  color: rgb(220, 220, 220);
+  background-color: #ef9999;
 }
 
 #projects h2 {
@@ -89,38 +119,56 @@ h2 {
   font-size: 898;
 }
 
-.experience-section {
+.projectImage {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 100vh; /* Adjust as needed based on your design */
-  z-index: 3;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  flex-direction: column;
+  overflow:hidden;
+  position: relative;
 }
 
-.experience-item {
-  width: 300px;
-  margin: 20px;
-  padding: 15px;
-  border: 1px solid #ccc;
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: opacity 0.5s, transform 0.5s;
-  z-index: 3;
+.projectImage video {
+  border-radius: 2vh;
 }
 
-.show-experience {
-  opacity: 1;
-  transform: translateX(0);
+.glassy-filter {
+  border-radius: 2vh;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+
+  background: radial-gradient(
+    ellipse at center,
+    rgba(150, 137, 137, 0.5) 10%,
+    rgb(255, 255, 255) 100%
+  );
+}
+
+.projectImage img {
+  position: relative;
+
+  width: 100%;
+  height: auto;
+
+  border-radius: 2vh;
+  z-index: 1;
 }
 
 .navbar {
-  
   border-bottom: 2px solid #000;
   background: rgb(10, 10, 10);
- 
+
   /* outline: 2px solid #EEEEEE; */
   width: 100%;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,7 +194,6 @@ h2 {
 }
 
 #logo {
-  
   background-color: #ffffff;
   background-size: 100%;
   -webkit-background-clip: text;
@@ -196,7 +243,6 @@ h2 {
   justify-content: center;
 }
 .section3 {
-  
   height: 120px; /* Adjust the height as needed */
   width: 100%;
   /* margin-top: 400px; */
@@ -234,7 +280,7 @@ h2 {
   text-decoration: none;
   font-size: 1.6vw;
   color: rgb(0, 0, 0);
-  font-family: "DM Serif Display", serif; 
+  font-family: "DM Serif Display", serif;
   display: block;
   transition: 0.3s;
   padding-left: 25%;
@@ -244,8 +290,6 @@ h2 {
 .sidenav a:hover {
   background-color: #b5b5b5;
 }
-
-
 
 .footer {
   margin-top: 10vh;
