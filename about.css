@@ -24,19 +24,20 @@
 }
 
 .aboutme_appear {
+  
   position: relative;
   flex-direction: column;
   display: flex;
   /* Display flex keeps the textbox relative to the previosu flexbox*/
-  text-align: center;
+  
   font-size: 1.3vw;
   left: -20%;
   opacity: 0%;
   color: white;
 
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-top: calc(7vh + 5%);
+  margin-left: 25%;
+  margin-right: 50%;
+  margin-top: calc(7vh + 11%);
   z-index: 2;
   transition: left 1s ease-in-out, opacity 1.5s ease-in-out;
 }
@@ -49,14 +50,14 @@
   flex-direction: column;
   display: flex;
   align-items: center;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 7vh;
+  margin-left: 60%;
+  margin-right: 25%;
+  margin-top: -17%;
   z-index: 2;
   transition: right 1s ease-in-out, opacity 1.5s ease-in-out;
 }
 
 .aboutme_appear1 img {
-  width: 500px;
+  width: 25vw;
   border-radius: 2000px;
 }
