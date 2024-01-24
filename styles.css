@@ -28,6 +28,7 @@ body {
   bottom: 0;
   overflow-y: scroll;
   margin-right: -15px; /* Adjust for scrollbar width */
+  
 }
 
 /* Main Content Styles */
@@ -68,7 +69,7 @@ h2 {
   padding: 20px;
   
   display: grid;
-  align-items: center;
+
   justify-items: center;
   grid-template-columns: repeat(
     2,
@@ -79,6 +80,11 @@ h2 {
   margin-left: 18%;
   margin-right: 18%;
   color: white;
+}
+
+#projectT {
+  opacity: 0%;
+  transition: opacity 1s ease-in-out;
 }
 
 .projectGrid img {

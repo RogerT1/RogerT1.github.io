@@ -90,6 +90,10 @@ scrollContainer.addEventListener("scroll", function () {
   var projTwo = document.getElementById("oneTwo");
   var projThree = document.getElementById("twoOne");
   var projFour = document.getElementById("twoTwo");
+  var projTitle= document.getElementById("projectT");
+  if (scrollY >= scrollActivationHeight1 - 800) {
+    projTitle.style.opacity = "100%";
+  }
   if (scrollY >= scrollActivationHeight1 && windowSize >= 700) {
     projOne.style.left = 0;
     projOne.style.opacity = "100%";
