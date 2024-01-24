@@ -1,4 +1,26 @@
+@media screen and (max-width: 1700px) {
+  #projects {
+    margin-top: -15%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  #projects {
+    margin-top: -20%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #projects {
+    margin-top: -30%;
+  }
+}
+
 @media screen and (max-width: 1200px) {
+  #projects {
+    margin-top: -8%;
+  }
+
   .aboutme-btn {
     position: relative;
     flex-direction: column;
@@ -149,6 +171,10 @@
 }
 
 @media screen and (max-width: 500px) {
+  #projects {
+    margin-top: -30%;
+  }
+
   .aboutme_appear p {
     margin-left: -10%;
     margin-right: -10%;

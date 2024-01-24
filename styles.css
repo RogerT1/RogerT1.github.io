@@ -51,6 +51,11 @@ h2 {
 /* ------------------------------------------------------------ */
 
 /* Project Title  */
+
+#projects {
+  margin-top: -8%;
+}
+
 #projects h2 {
   padding-top: 100px;
   text-align: center;
