@@ -4,11 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="codecell, tsec, contact, contact us, harsh kapadia, html, css, js, vanilla css">
-        <meta name="description" content="A static contact us page for TSEC CodeCell by Harsh Kapadia">
-        <meta name="author" content="Harsh Kapadia">
+        <meta name="description" content="A static contact us page for Roger Truong">
+        <meta name="author" content="Roger Truong">
 
         <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles.css" />
+
+        
        
         
         <link rel="shortcut icon" href="./static/img/codecell_logo.svg" type="image/x-icon" sizes="any">
@@ -19,6 +21,7 @@
     <link rel="stylesheet" href="aboutmedia.css" />
     <link rel="stylesheet" href="background.css" />
     <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="contacts.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,7 +30,7 @@
     />
         <script defer src="./static/js/account_dropdown.js"></script>
         <script defer src="./static/js/burger_menu_dropdown.js"></script>
-
+<div class="scroll-container">
         <!-- Header Bar -->
       <nav class="navbar">
         <div class="navbar_container">
@@ -68,10 +71,11 @@
           </ul>
         </div>
       </nav>
-        <main>
-            <div class="background">
+      <div class="background">
             <img src="images/berserk.png" alt="" />
           </div>
+        <main>
+            
             <div class="title">Contact us</div>
             <div class="title-info">We'll get back to you soon!</div>
 
@@ -88,7 +92,7 @@
 
                 <div class="input-group">
                     <input type="email" name="e-mail" id="e-mail" placeholder="e-mail">
-                    <label for="e-mail">e-mail</label>
+                    <label for="e-mail">Email</label>
                 </div>
 
                 <div class="textarea-group">
@@ -101,17 +105,19 @@
                 </div>
             </form>
         </main>
-
-        <footer>
-            <a href="#" target="_blank"><img class="social-media-img" src="./static/img/social_media/facebook.svg" alt="Facebook"></a>
-            <a href="#" target="_blank"><img class="social-media-img" src="./static/img/social_media/github.svg" alt="GitHub"></a>
-            <a href="#" target="_blank"><img class="social-media-img" src="./static/img/social_media/instagram.svg" alt="Instagram"></a>
- 
-            <a href="#"><img class="codecell-img" src="./static/img/codecell_logo.svg" alt="TSEC CodeCell"></a>
- 
-            <a href="#" target="_blank"><img class="social-media-img" src="./static/img/social_media/linkedin.svg" alt="LinkedIn"></a>
-            <a href="#" target="_blank"><img class="social-media-img" src="./static/img/social_media/twitter.svg" alt="Twitter"></a>
-            <a href="#" target="_blank"><img class="social-media-img" src="./static/img/social_media/youtube.svg" alt="YouTube"></a>
-        </footer>
-    </body>
+<!-- Footer Section -->
+        <div class="footer__container">
+          <div class="footer__link--items">
+            <ul>
+              <li><a href="https://www.instagram.com/rogrtru/?hl=en">Instagram</a></li>
+              <li><a href="https://www.facebook.com/RogerTruong0/">Facebook</a></li>
+              <li><a href="https://github.com/rogertruong7">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/roger-truong/">LinkedIn</a></li>
+              <li><a href="/">Resume</a></li>
+            </ul>
+          </div>
+          <p class="website__rights">© RT 2024. All rights reserved</p>
+        </div>
+    
+    </div>
 </html>
