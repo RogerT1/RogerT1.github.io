@@ -175,14 +175,19 @@
     margin-top: -30%;
   }
 
+  .about {
+    width: 30%;
+    font-size: 4vw;
+  }
+
   .aboutme_appear p {
-    margin-left: -10%;
-    margin-right: -10%;
+    margin-left: -40%;
+    margin-right: -40%;
     font-size: 3.5vw;
   }
 
   .aboutme_appear1 img {
-    width: 250px;
+    width: 280px;
   }
 
   .sidenav {
