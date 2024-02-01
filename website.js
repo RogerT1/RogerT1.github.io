@@ -1,11 +1,14 @@
+const scrollContainer = document.querySelector(".scroll-container");
+
+// Side navigation scrolling with scroll container
 document.querySelectorAll(".sidenav a").forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
+  anchor.addEventListener("click", function (lol) {
+    lol.preventDefault();
 
     const targetId = this.getAttribute("href").substring(1);
     // this gets the tag without the #
     const targetElement = document.getElementById(targetId);
-    const scrollContainer = document.querySelector(".scroll-container");
+
     if (targetId === "about") {
       scrollContainer.scrollTo({
         top: targetElement.offsetTop - 1000,
@@ -20,16 +23,18 @@ document.querySelectorAll(".sidenav a").forEach((anchor) => {
   });
 });
 
+
+// About me
 document.addEventListener("DOMContentLoaded", function () {
   var aboutSlider1 = document.getElementById("aboutSlider1");
+  var aboutSlider2 = document.getElementById("aboutSlider2");
 
   aboutSlider1.style.left = 0;
   aboutSlider1.style.opacity = "100%";
-
-  var aboutSlider2 = document.getElementById("aboutSlider2");
-
   aboutSlider2.style.right = 0;
   aboutSlider2.style.opacity = "100%";
+
+  sessionStorage.setItem("aboutAnimated", true);
 });
 
 //////////////////////////////
@@ -78,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Project Animation
-const scrollContainer = document.querySelector(".scroll-container");
+
 scrollContainer.addEventListener("scroll", function () {
   var scrollY = scrollContainer.scrollTop;
   var windowSize = window.innerWidth;
@@ -91,7 +96,7 @@ scrollContainer.addEventListener("scroll", function () {
   var projTwo = document.getElementById("oneTwo");
   var projThree = document.getElementById("twoOne");
   var projFour = document.getElementById("twoTwo");
-  var projTitle= document.getElementById("projectT");
+  var projTitle = document.getElementById("projectT");
   if (scrollY >= scrollActivationHeight1 - 800) {
     projTitle.style.opacity = "100%";
   }

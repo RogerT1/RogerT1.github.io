@@ -367,7 +367,7 @@ h2 {
 .sidenav {
   border: 4px double #000000;
   border-radius: 15px;
-  background-image: url("images/iamge2.jpg");
+  background-image: url("../images/iamge2.jpg");
   background-size: cover;
   height: auto;
   width: 17.5%;
