@@ -16,7 +16,7 @@ document.querySelectorAll(".sidenav a").forEach((anchor) => {
       });
     } else {
       scrollContainer.scrollTo({
-        top: targetElement.offsetTop - 50,
+        top: targetElement.offsetTop,
         behavior: "smooth",
       });
     }

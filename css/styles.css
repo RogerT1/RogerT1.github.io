@@ -270,15 +270,44 @@ h2 {
 /* ------------------------------------------------------------ */
 /* ------------------Skills Section------------------------ */
 /* ------------------------------------------------------------ */
+
+.languageHeader {
+  color: white;
+  font-size: 26px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
 .filler {
   min-height: 20vh;
 }
 
 .skills {
-  background-color: #b5b5b5;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 18%;
+  margin-right: 18%;
   padding: 20px;
+}
+
+.languages {
+  display: grid;
+  grid-template-columns: repeat(
+      4, auto
+    ); 
+  grid-gap: auto; /* Adjust the gap between grid items as needed */
+  align-items: center;
+  justify-content: center;
+  
+}
+.languages p {
+  color: white;
+  padding: 20px;
+  max-width: 16vw;
+}
+
+.languages img {
+  padding: 20px;
+    max-width: 8vw; /* Ensures images don't exceed the container width */
+    height: auto; /* Maintains aspect ratio */
 }
 
 .skillHeader {
