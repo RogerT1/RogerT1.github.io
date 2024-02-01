@@ -60,6 +60,7 @@ function handleWheel(event) {
 }
 //////////////////////////////
 
+// Video playback on hover
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".filter").forEach(function (videoHover) {
     videoHover.addEventListener("mouseenter", function () {
