@@ -7,8 +7,8 @@
   font-family: "Lexend Deca", sans-serif;
   font-family: "Lato", sans-serif;
   font-family: "Brawler", serif; */
-  font-family: "Lexend Deca", sans-serif; 
-  font-family: "DM Serif Display", serif;/*
+  font-family: "Lexend Deca", sans-serif;
+  font-family: "DM Serif Display", serif; /*
   font-family: 'Nova Square', sans-serif;/*
   font-family: 'Righteous', sans-serif;
   font-family: "Sora", sans-serif; 
@@ -28,23 +28,6 @@ body {
   bottom: 0;
   overflow-y: scroll;
   margin-right: -15px; /* Adjust for scrollbar width */
-  
-}
-
-/* Main Content Styles */
-.maintext {
-  color: white;
-  margin-left: 18%;
-  margin-right: 18%;
-}
-
-h2 {
-  padding-top: 40px;
-  margin-left: 18%;
-  margin-right: 18%;
-  transition: margin-left 0.5s;
-  font-size: 4vh;
-  color: white;
 }
 
 /* ------------------------------------------------------------ */
@@ -67,7 +50,7 @@ h2 {
 /* Project Grid  */
 .projectGrid {
   padding: 20px;
-  
+
   display: grid;
 
   justify-items: center;
@@ -90,23 +73,22 @@ h2 {
 .projectGrid img {
   display: flex;
   justify-content: center;
-  
+
   width: 100%;
 }
 
 /* The Project Container for each Project */
 .projectImage {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   max-width: 800px;
   border-radius: 2vh;
   width: 100%;
   display: flex;
-  
-  
-  background-color: rgb(248, 227, 231);
+
+  background-color: rgb(255, 241, 241);
   color: white;
   flex-direction: column;
-  
-  
+
   overflow: hidden;
   position: relative;
 }
@@ -121,9 +103,9 @@ h2 {
 }
 
 .filter {
-  border-bottom: 12px solid rgb(248, 227, 231);
-  border-right: 2px solid rgb(248, 227, 231);
-  border-left: 2px solid rgb(248, 227, 231);
+  border-bottom: 12px solid rgb(255, 241, 241);
+  border-right: 2px solid rgb(255, 241, 241);
+  border-left: 2px solid rgb(255, 241, 241);
   border-radius: inherit;
   display: flex;
   flex-direction: column;
@@ -132,9 +114,6 @@ h2 {
 }
 
 .filter::after {
-  
-  
-  
   content: "";
   position: absolute;
   width: 100%;
@@ -147,8 +126,6 @@ h2 {
 }
 
 .filter video {
-  
-  
   overflow: hidden;
   object-fit: cover;
   position: relative;
@@ -178,6 +155,7 @@ h2 {
 
 /* Learn More Button */
 .learnMore {
+  box-shadow: 10px 10px 10px rgba(69, 41, 41, 0.5);
   color: rgb(184, 115, 115);
   background: rgb(255, 212, 219);
   position: absolute;
@@ -219,14 +197,71 @@ h2 {
   opacity: 0%;
   transition: right 0.8s ease-in-out, opacity 1s ease-in-out;
 }
+
+/* ------------------------------------------------------------ */
+/* ------------------Experience Section------------------------ */
+/* ------------------------------------------------------------ */
+
+.experience {
+  background-color: #b5b5b5;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 20px;
+}
+
+.maintext {
+  color: white;
+}
+
+h2 {
+  padding-top: 40px;
+  margin-left: 18%;
+  margin-right: 18%;
+  transition: margin-left 0.5s;
+  font-size: 4vh;
+  color: white;
+}
+
+.filler {
+  min-height: 20vh;
+}
+
+#experienceHeader {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.experienceT {
+  color: white;
+}
+
+/* ------------------------------------------------------------ */
+/* ------------------Skills Section------------------------ */
+/* ------------------------------------------------------------ */
+.filler {
+  min-height: 20vh;
+}
+
+.skills {
+  background-color: #b5b5b5;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 20px;
+}
+
+.skillHeader {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
 /* ------------------------------------------------------------ */
 /* ------------------------------------------------------------ */
 /* ------------------------------------------------------------ */
 
 /* Header Navigation Bar */
 .navbar {
-  border-bottom: 2px solid #000;
-  background: rgb(10, 10, 10);
+
+  background: rgb(10, 10, 10, 0.98);
   width: 100%;
   display: flex;
   justify-content: center;

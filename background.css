@@ -1,7 +1,7 @@
-.firstSection {
+.aboutSection {
   min-height: 100vh;
   overflow-x: hidden;
-  z-index: -1000;
+
   position: relative;
 }
 

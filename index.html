@@ -6,8 +6,9 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     />
-    <link rel="icon" href="images/heart.png" type="image/x-icon">
-<link rel="shortcut icon" href="images/heart.png" type="image/x-icon">
+    <title>Roger Truong's Portfolio</title>
+    <link rel="icon" href="images/heart.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/heart.png" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="about.css" />
     <link rel="stylesheet" href="aboutmedia.css" />
@@ -22,6 +23,9 @@
   </head>
   <body>
     <div class="scroll-container">
+      <div class="background">
+        <img src="images/clouds.jpg" alt="" />
+      </div>
       <!-- Side Navigation -->
       <div class="sidenav">
         <a href="#about">⊳ ABOUT ME</a>
@@ -71,12 +75,9 @@
 
       <!-- Main Content -->
       <div class="main">
+        
         <!-- About Me Section  -->
-        <div class="firstSection">
-          <div class="background">
-            <img src="images/berserk.png" alt="" />
-          </div>
-
+        <div class="aboutSection">
           <!-- About Me Title -->
           <div class="aboutme-btn" id="about">
             <div href="/" class="about">⊳ ABOUT ME ⊲</div>
@@ -90,6 +91,10 @@
               looking for an opportunity to show my potential and use my skills
               where it matters.
             </p>
+          </div>
+
+          <div class="cv-btn">
+            <a href="https://www.linkedin.com/in/roger-truong/" target="blank" class="cv">Download CV ↓</a>
           </div>
 
           <!-- About Me Image  -->
@@ -125,7 +130,7 @@
                 </video>
                 <a
                   class="learnMore"
-                  href="https://chat.openai.com/c/f5a482e3-e1b0-4e64-aeb1-9e3156288f1e"
+                  href="projects1.html"
                   target="blank"
                 >
                   Learn More
@@ -134,7 +139,7 @@
             </div>
 
             <div class="projectImage" id="oneTwo">
-              <div class="projectText">Discord Gaming Bot</div>
+              <div class="projectText">Placeholder Project</div>
 
               <div class="filter">
                 <video
@@ -161,7 +166,7 @@
               </div>
             </div>
             <div class="projectImage" id="twoOne">
-              <div class="projectText">Discord Gaming Bot</div>
+              <div class="projectText">Placeholder Project</div>
               <div class="filter">
                 <video
                   width=""
@@ -188,7 +193,7 @@
               </div>
             </div>
             <div class="projectImage" id="twoTwo">
-              <div class="projectText">Discord Gaming Bot</div>
+              <div class="projectText">Placeholder Project</div>
 
               <div class="filter">
                 <video
@@ -219,61 +224,78 @@
         </section>
 
         <!-- Experience Section -->
-        <section id="experience">
-          <h2>Experience</h2>
-          <p class="maintext">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum..
-          </p>
+        <section class="experiences" id="experience">
+          <div class="filler"></div>
+          <h2 id="experienceHeader">EXPERIENCE</h2>
+          <div class="experience">
+            <h3 class="experienceT">Tutor at Edu-Kingdom College</h3>
+            <p class="maintext">
+              Tutoring has significantly enhanced my communication skills by
+              enabling me to convey complex concepts in a clear and relatable
+              manner to my students. Through tutoring, I've cultivated patience,
+              adaptability, and the ability to break down complex concepts,
+              which are skills that have enhanced my collaborate in team
+              settings.
+            </p>
+          </div>
           <br />
-          <p class="maintext">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum..
-          </p>
+          <div class="experience">
+            <h3 class="experienceT">President of UNSW TCSA</h3>
+            <p class="maintext">
+              Serving as the President of TCSA has enabled me to actively
+              promote the Teochew culture and language by organising regular
+              events for our society members. This responsibility has equipped
+              me with valuable skills in financial management, effective
+              communication, and event coordination.
+            </p>
+          </div>
           <br />
-          <p class="maintext">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum..
-          </p>
+
+          <div class="experience">
+            <h3 class="experienceT">Marketing Director of UNSW Food Lovers</h3>
+            <p class="maintext">
+              As the Marketing Director at UNSW Food Lovers, I have the
+              privilege of spearheading our marketing efforts to effectively
+              convey our society's mission to our target audience. Through
+              strategic use of social media and marketing strategies, I work
+              towards enabling us to engage and connect with our intended
+              audience in a meaningful way.
+            </p>
+          </div>
         </section>
 
         <!-- Skills Section  -->
-        <section id="skills">
-          <h2>Skills</h2>
-          <p class="maintext">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum..
-          </p>
+        <section class="skill" id="skills">
+          <div class="filler"></div>
+          <h2 class="skillHeader">SKILLS</h2>
+          <div class="skills">
+            <p class="maintext">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum..
+            </p>
+          </div>
+          <div class="filler"></div>
         </section>
 
         <!-- Footer Section -->
         <div class="footer__container">
           <div class="footer__link--items">
             <ul>
-              <li><a href="https://www.instagram.com/rogrtru/?hl=en">Instagram</a></li>
-              <li><a href="https://www.facebook.com/RogerTruong0/">Facebook</a></li>
+              <li>
+                <a href="https://www.instagram.com/rogrtru/?hl=en">Instagram</a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/RogerTruong0/">Facebook</a>
+              </li>
               <li><a href="https://github.com/rogertruong7">GitHub</a></li>
-              <li><a href="https://www.linkedin.com/in/roger-truong/">LinkedIn</a></li>
+              <li>
+                <a href="https://www.linkedin.com/in/roger-truong/">LinkedIn</a>
+              </li>
               <li><a href="/">Resume</a></li>
             </ul>
           </div>
