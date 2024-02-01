@@ -1,16 +1,19 @@
+.aboutSection {
+  position: relative;
+}
+
 .aboutme-btn {
-  
   position: relative;
   flex-direction: column;
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
   text-align: center;
 }
 
 .about {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,11 +37,9 @@
   text-align: center;
 }
 
-
-
 .cv {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
-  border: 4px solid rgb(255, 255, 255);
+  box-shadow: 5px 5px 1px rgba(210, 201, 201, 0.9);
+  border: 4px solid rgba(210, 201, 201);
   margin-top: 5vh;
   position: relative;
   display: flex;
@@ -63,7 +64,6 @@
 }
 
 .aboutme_appear {
-  
   position: relative;
   flex-direction: column;
   display: flex;
@@ -76,13 +76,12 @@
 
   margin-left: 25%;
   margin-right: 50%;
-  margin-top: calc(7vh + 11%);
+  margin-top: 3%;
   z-index: 2;
   transition: left 1s ease-in-out, opacity 1.5s ease-in-out;
 }
 
 .aboutme_appear1 {
-
   right: -20%;
   opacity: 0%;
   color: white;

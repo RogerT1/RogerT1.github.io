@@ -1,14 +1,10 @@
 @media screen and (max-width: 1700px) {
   
-  #projects {
-    margin-top: -15%;
-  }
+  
 }
 
 @media screen and (max-width: 1500px) {
-  #projects {
-    margin-top: -20%;
-  }
+  
 
   .cv {
     font-size: 1.2vw;
@@ -16,9 +12,7 @@
 }
 
 @media screen and (max-width: 1300px) {
-  #projects {
-    margin-top: -30%;
-  }
+  
 }
 
 @media screen and (max-width: 1200px) {

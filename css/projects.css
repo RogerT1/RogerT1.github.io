@@ -1,0 +1,28 @@
+/* ------------------------------------------------------------ */
+/* ------------------- Projects------------------------ */
+/* ------------------------------------------------------------ */
+
+.container {
+  position: relative;
+  margin: 0 20%;
+}
+
+.container h1 {
+  padding-top: 30px;
+  color: #ffffff;
+}
+
+.container p {
+  color: white;
+}
+
+.container h2 {
+  color: white;
+  margin: 0%;
+}
+
+.container ul {
+  color: white;
+  list-style-type: none;
+  padding-left: 0;
+}

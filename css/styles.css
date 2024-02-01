@@ -36,19 +36,23 @@ body {
 
 /* Project Title  */
 
+.main {
+  position:relative;
+}
+
 #projects {
-  margin-top: -8%;
+  position:relative;
 }
 
 #projects h2 {
-  padding-top: 100px;
+  position: relative;
   text-align: center;
   padding-bottom: 3vh;
-  font-size: 898;
 }
 
 /* Project Grid  */
 .projectGrid {
+  position: relative;
   padding: 20px;
 
   display: grid;
@@ -66,11 +70,13 @@ body {
 }
 
 #projectT {
+  position: relative;
   opacity: 0%;
   transition: opacity 1s ease-in-out;
 }
 
 .projectGrid img {
+  
   display: flex;
   justify-content: center;
 
@@ -224,7 +230,7 @@ body {
 /* ------------------------------------------------------------ */
 
 .experience {
-  background-color: #b5b5b5;
+
   margin-left: 20%;
   margin-right: 20%;
   padding: 20px;
@@ -232,6 +238,7 @@ body {
 
 .maintext {
   color: white;
+  font-size: 18px;
 }
 
 h2 {
@@ -239,8 +246,12 @@ h2 {
   margin-left: 18%;
   margin-right: 18%;
   transition: margin-left 0.5s;
-  font-size: 4vh;
+  font-size: 36px;
   color: white;
+}
+
+.experiences h3 {
+  font-size: 24px;
 }
 
 .filler {
@@ -393,33 +404,6 @@ h2 {
   background-color: #b5b5b5;
 }
 
-/* ------------------------------------------------------------ */
-/* ------------------- Project 1------------------------ */
-/* ------------------------------------------------------------ */
-
-.container {
-  margin: 0 20%;
-}
-
-.container h1 {
-  padding-top: 30px;
-  color: #ffffff;
-}
-
-.container p {
-  color: white;
-}
-
-.container h2 {
-  color:white;
-  margin: 0%;
-}
-
-.container ul {
-  color:white;
-  list-style-type: none;
-  padding-left: 0;
-}
 
 
 
