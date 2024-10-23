@@ -212,6 +212,10 @@
     font-size: 4vw;
   }
 
+  #about {
+    display: none;
+  }
+
   .cv {
     width: 20%;
     font-size: 3.2vw;
