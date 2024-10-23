@@ -224,6 +224,12 @@ body {
   transition: right 0.8s ease-in-out, opacity 1s ease-in-out;
 }
 
+#threeOne {
+  left: -40%;
+  opacity: 0%;
+  transition: left 0.8s ease-in-out, opacity 1s ease-in-out;
+}
+
 /* ------------------------------------------------------------ */
 /* ------------------Experience Section------------------------ */
 /* ------------------------------------------------------------ */

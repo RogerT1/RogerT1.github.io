@@ -90,12 +90,14 @@ scrollContainer.addEventListener("scroll", function () {
   const targetElement = document.getElementById("projects");
   const scrollActivationHeight1 = targetElement.offsetTop - 700;
   const scrollActivationHeight2 = targetElement.offsetTop - 200;
+  const scrollActivationHeight5 = targetElement.offsetTop + 300;
   const scrollActivationHeight3 = targetElement.offsetTop + 300;
   const scrollActivationHeight4 = targetElement.offsetTop + 800;
   var projOne = document.getElementById("oneOne");
   var projTwo = document.getElementById("oneTwo");
   var projThree = document.getElementById("twoOne");
   var projFour = document.getElementById("twoTwo");
+  var projFive = document.getElementById("threeOne");
   var projTitle = document.getElementById("projectT");
   if (scrollY >= scrollActivationHeight1 - 800) {
     projTitle.style.opacity = "100%";
@@ -111,6 +113,10 @@ scrollContainer.addEventListener("scroll", function () {
     projThree.style.opacity = "100%";
     projFour.style.right = 0;
     projFour.style.opacity = "100%";
+  }
+  if (scrollY >= scrollActivationHeight5 && windowSize >= 700) {
+    projFive.style.left = 0;
+    projFive.style.opacity = "100%";
   }
   if (scrollY >= scrollActivationHeight1 && windowSize < 700) {
     projOne.style.left = 0;
