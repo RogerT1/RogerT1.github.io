@@ -260,4 +260,12 @@
   .footer__container a {
     font-size: 24px;
   }
+
+  .learnMore {
+    border-radius: 25px;
+  }
+
+  .projectGrid {
+    margin: 10px;
+  }
 }
