@@ -25,6 +25,10 @@
   
 }
 
+.project_images {
+  max-height: 100px;
+}
+
 .container h1 {
   padding-top: 30px;
   color: #ffffff;
