@@ -206,7 +206,7 @@
   }
 
  .about {
-    position: relative;
+    display: none;
     top: 0;
     width: 30%;
     font-size: 4vw;
