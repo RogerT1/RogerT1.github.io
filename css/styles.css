@@ -432,6 +432,14 @@ h2 {
   background-color: #b5b5b5;
 }
 
-
-
+.experience {
+  display: flex;
+  gap: 50px;
+  margin-right: 250px;
+}
+.experience img {
+  width: 100px;
+  
+  
+}
 
