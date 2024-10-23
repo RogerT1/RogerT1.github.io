@@ -206,6 +206,7 @@
   }
 
  .about {
+    display: none;
     width: 30%;
     font-size: 4vw;
   }
@@ -228,5 +229,35 @@
     .cv {
     font-size: 1.6vh;
   }
+
+  .experience {
+    flex-direction: column;
+    margin-right: 5%;
+  }
+
+  .languages {
+    display: block;
+    margin-right: 0px;
+    padding-right: 0;
+  }
+
+  .languages p {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .languages img {
+    width: 100px;
+    max-width: 100%;
+  }
+
+  .skills {
+    margin-left: 0;
+    margin-right: 40px;
+    padding: 20px;
+  }
   
+  .footer__container a {
+    font-size: 24px;
+  }
 }

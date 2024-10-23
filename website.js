@@ -93,6 +93,7 @@ scrollContainer.addEventListener("scroll", function () {
   const scrollActivationHeight5 = targetElement.offsetTop + 300;
   const scrollActivationHeight3 = targetElement.offsetTop + 300;
   const scrollActivationHeight4 = targetElement.offsetTop + 800;
+  const scrollActivationHeight6 = targetElement.offsetTop + 1300;
   var projOne = document.getElementById("oneOne");
   var projTwo = document.getElementById("oneTwo");
   var projThree = document.getElementById("twoOne");
@@ -133,5 +134,9 @@ scrollContainer.addEventListener("scroll", function () {
   if (scrollY >= scrollActivationHeight4 && windowSize < 700) {
     projFour.style.right = 0;
     projFour.style.opacity = "100%";
+  }
+  if (scrollY >= scrollActivationHeight6 && windowSize < 700) {
+    projFive.style.left = 0;
+    projFive.style.opacity = "100%";
   }
 });
