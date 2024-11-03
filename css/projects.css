@@ -14,7 +14,9 @@
 }
 
 #project_description {
-  margin: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 50px;
 }
 #project_description img {
   width: 100%;
@@ -32,6 +34,7 @@
   position: relative;
   
 }
+
 
 .project_images {
   max-height: 100px;
