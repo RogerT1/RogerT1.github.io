@@ -13,6 +13,14 @@
   padding-top: 30px;
 }
 
+#project_description {
+  margin: 10%;
+}
+#project_description img {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
 .imageBox img {
   box-shadow: 5px 5px 10px rgb(168, 168, 168);
   border: 2px solid rgb(38, 38, 38);
@@ -29,10 +37,14 @@
   max-height: 100px;
 }
 
+#project_description b {
+  padding-top: 50px;
+}
+
 .container h1 {
-  padding-top: 30px;
+
   color: #ffffff;
-  margin: 0 10%;
+
 }
 
 .linkText {
@@ -53,18 +65,16 @@
 .container p {
   font-size: 18px;
   color: white;
-  margin: 0 10%;
 }
 
 .container h2 {
   color: white;
-  margin: 0 10%;
-
+  margin: 0;
 }
 
 .container ul {
   color: white;
   list-style-type: none;
   padding-left: 0;
-  margin: 0 10%;
+
 }
